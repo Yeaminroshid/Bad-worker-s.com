@@ -1,0 +1,265 @@
+Personal portfolio web site
+Design sample
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="stylee.css">
+	<style >*{
+	
+	
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+
+}
+body{
+	overflow: hidden;
+	background-color: lightblue;
+}
+.container{
+	width: 100%;
+	min-height: 100vh; 
+
+}
+nav{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	height: 80px;
+	line-height: 80px;
+
+	z-index: 111;
+	
+
+}
+.logo{
+	display: flex;
+	font-size: 40px;
+	font-weight: 800;
+	color: #3d535f;
+	letter-spacing: 3px;
+	cursor: pointer;
+	text-transform: uppercase;
+
+
+}
+b{
+	font-size: 70px;
+	color: indigo;
+}
+.navitems{
+	display: flex;
+}
+.navitems li{
+	list-style: none;
+	margin: 0px  15px; 
+}
+.navitems li a {
+	font-size: 25px; 
+	color: #3d535f;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+.navitems li:hover a,.links a:hover{
+color: red;
+}
+.links a{
+	font-size: 30px;
+	color: #3d535f;
+	margin: 25px 10px;
+}
+.wrapper{
+	
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	padding: 0 10%;
+	/*overflow: hidden;*/
+}
+.wrapper::before{
+	position: absolute;
+	content: '';
+	height: 600px;
+	width: 600px;
+	border-radius: 50%;
+	left: -5%;
+	opacity: 0.2;
+	top: 60%;
+	background:linear-gradient(180deg,#7f00ff, pink);
+	animation: object1 6s linear infinite;
+
+}
+.wrapper::after{
+	position: absolute;
+	content: '';
+	height:200px;
+	width: 200px;
+	border-radius: 50%;
+	left: 40%;
+	
+	top: 12%;
+	background:linear-gradient(45deg,#7f00ff, pink);
+	animation: object2 6s linear infinite;
+
+}
+@keyframes object1{
+	50%{
+		left: 13%;
+		top:41%;
+
+	}
+}
+@keyframes object2{
+	50%{
+		left: 13%;
+		top:13%;
+
+	}
+}
+
+.cols{
+	width: 60%;
+}
+.cols0{
+	z-index: 9; 
+}
+.topline{
+	display: block;
+	position: relative;
+	font-size: 35px;
+	letter-spacing: 5px;
+	color: #3d535f;
+}
+.topline::after{
+	position: absolute;
+	content:'';
+	height: 4px;
+	width: 45px;
+	bottom: 10px;
+	background-color: #7f00ff;
+
+}
+h1{
+	display: block;
+	font-size: 7em;
+	font-weight: 900;
+	color: #3d535f;
+
+}
+.multitext{
+	color: #7f00ff;
+	text-transform: capitalize;
+}
+p{
+	display: block;
+	width: 90%;
+	font-size: 1.2em;
+	color: #3d535f;
+}
+.btns{
+	width: 100%;
+	position: relative;
+	left: 300px;
+
+}
+button{
+	outline: none;
+	border:none;
+	cursor: pointer;
+	font-style: 25px;
+	font-weight: 400;
+	color: #fff;
+	background-color: #3d535f;
+	padding: 8px 14px;
+	margin: 40px 5px;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+}
+button:hover{
+	background-color: #7f00ff;
+
+}
+.imgbox{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.imgbox img{
+	position: relative;
+	height: 100%;
+	width: calc(130% -80px);
+	margin-left: 900px;
+	margin-top: -175px;
+	animation: animate 3s linear infinite;
+
+}
+@keyframes animate {
+	50%{
+		
+		top: -200px;
+
+
+	}
+}
+ </style>
+
+</head>
+<body>
+	<div  class="container">
+		<nav>
+			<div class="logo">YR<b>.</b></div>
+			<ul class="navitems">
+				<li>
+					<a href="#"> Home</a>
+					<a href="#"> About </a>
+					<a href="#"> Skill</a>
+					<a href="#"> Blog</a>
+
+				</li>
+		<div class="links">
+			<a href="#"><img src="C:\Users\Mazhab Rashid\Desktop\Web design/fb.png"></a>
+			 
+			
+			
+
+			<a href="#"><img src="C:\Users\Mazhab Rashid\Desktop\Web design/ig.png"></a>
+		</div>
+			</ul>
+		</nav>
+		<div class="wrapper">
+			<div class=" cols cols0"> </div>
+			<span class="topline">Hello</span><br><br>
+			<h1>I'm <span class="multitext">coder</span></h1><br>
+			<p>loremah akfdh asf iashd gsd sakjgb fkjghsaiuth ew frewaish hgkjv as fwagwg fds f tfgg vnsag afo isvshdf fvasdidf hgasfd</p><br><br>
+			<div class="btns"></div>
+			<button>Download CV</button>
+			<button>hire me</button> 
+			<div class=" cols1"> 
+				 <div class="imgbox">
+				 <img src="" id="splash">
+				 <img src="C:\Users\Mazhab Rashid\Desktop\Web design/7.jpg"></div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.ner/npm/typed.js@2.0.12"></script>
+	<script >
+		var typingeffect = new typed(".multitext",{
+			strings:["coder","web desighner"],
+			loop: true,
+			typespeed:100,
+			backspeed: 80,
+			backdelay:1500,
+
+		}
+	</script>
+</body>
+
+</html>
