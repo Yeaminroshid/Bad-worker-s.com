@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Type writer</title>
+	<style>
+		*{
+			margin: auto;
+			margin-top: 10vh;
+			align-items: center;
+			justify-content: center;
+		}
+		body{
+			background: black;
+
+			align-items: center;
+			justify-content: center;
+		}
+		.containaer{
+			display: inline-block;
+
+		}
+		.text{
+			font-size: 5em;
+			letter-spacing: 10px;
+			font-family: monospace;
+			border-right: 5px solid;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-shadow: 0 0 10px #03bcf4,
+		0 0 10px #03bcf4,
+		0 0 40px #03bcf4,
+		0 0 80px #03bcf4,
+		0 0 160px #03bcf4,
+		0 0 180px #03bcf4,
+		0 0 200px #03bcf4,
+		0 0 250px #03bcf4;
+			animation: typing 10s  infinite backwards, cursor .4s step-end infinite alternate;
+		}
+		@keyframes cursor {
+			50%{ border-color: transparent; }
+		}
+		@keyframes typing{
+			from {width: 0}
+		}
+	</style>
+</head>
+<body>
+<div class="containaer">
+	<p class="text">Work with BAD worker..</p>
+</div>
+</body>
+</html>

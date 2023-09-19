@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Hover effect</title>
+ 	<style>
+ 		*{
+ 			margin: 0;
+ 			padding: 0;
+ 			box-sizing: border-box;
+ 		}
+ 		html,body{
+ 			display: grid;
+ 			height: 100%;
+ 			place-items:center;
+ 			background: #000;
+ 		}
+ 		.center{
+ 			display: flex;
+ 			text-align: center;
+ 			align-items: center;
+ 			justify-content: center;
+
+ 		}
+ 		.outer{
+ 			position: relative;
+ 			margin: 0 50px;
+ 			background: #111;
+
+
+ 		}
+ 		.button{
+ 			height: 70px;
+ 			width: 220px;
+ 			border-radius: 50px;
+ 		}
+ 		.circle{
+ 			height: 200px;
+ 			width: 200px;
+ 			border-radius: 50%;
+ 		}
+ 		.outer button, .outer span{
+ 			position: absolute;
+ 			top: 50%;
+ 			left: 50%;
+ 			transform: translate(-50%, -50%);
+ 		}
+ 		.outer button{
+ 			background: #111;
+ 			color: #f2f2f2;
+ 			outline: none;
+ 			border: none;
+ 			font-size: 20px;
+ 			z-index: 9;
+ 			text-transform: uppercase;
+ 			cursor: pointer;
+
+ 		}
+ 		.button button{
+ 			height: 60px;
+ 			width: 210px;
+ 			border-radius: 50px;
+
+ 		}
+ 		.circle button{
+ 			height: 180px;
+ 			width: 180px;
+ 			border-radius: 50%;
+ 			
+ 		}
+ 		.outer span{
+ 			height: 100%;
+ 			width: 100%;
+ 			background: inherit;
+ 		}
+  .button span{
+ 			border-radius: 50px;
+ 		}
+ .circle span{
+ 			border-radius: 50%;
+ 		}
+ 		.outer:hover span:nth-child(1){
+ 			filter: blur(7px);
+ 		}
+ 		.outer:hover span:nth-child(2){
+ 			filter: blur(14px);
+ 		}
+ 		.outer:hover{
+ 			background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+ 			animation: rotate 1.5s linear infinite;
+ 		}
+ 		@keyframes rotate{
+ 			0%{
+ 				filter: hue-rotate(0deg);
+ 			}
+ 			100%{
+ 				filter: hue-rotate(360deg);
+ 			}
+ 		}
+
+.containaer{
+			display: inline-block;
+			color: white;
+		}
+		.text{
+			font-size: 5em;
+			letter-spacing: 10px;
+			font-family: monospace;
+			border-right: 5px solid;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			animation: typing 2s steps(20) infinite backwards, cursor .4s step-end infinite alternate;
+		}
+		@keyframes cursor {
+			50%{ border-color: transparent; }
+		}
+		@keyframes typing{
+			from {width: 0}
+		}
+ 	</style>
+ </head>
+ <body class="bod">
+ 	<div class="containaer">
+	<p class="text">Work with BAD worker..</p>
+</div>
+ <div class="center">
+ 	<div class="outer button">
+ 		<button>Hover me </button>
+ 		<span></span>
+ 		<span></span>
+ 	</div>
+ 	<div class="center">
+ 	<div class="outer circle">
+ 		<button>Hover me </button>
+ 		<span></span>
+ 		<span></span>
+ 	</div>
+ </div>
+ </body>
+ </html>

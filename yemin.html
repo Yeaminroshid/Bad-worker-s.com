@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yeamin</title> 
+	<meta charset="utf-8">
+	
+	<style>
+		body{
+			background-image: url(bg4.jpg);
+			background-repeat: no-repeat;
+			margin: 5px;
+			padding: 0;
+			position: center;
+			background-size: cover;
+}
+		h1{
+			color: white;
+			font-family: consolas;
+			font-size: 60px;
+			text-align: center;
+		}
+		.navbar {
+	
+	margin-top: -40px;
+}
+.navbar li  a{
+	position: relative;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	width: 150px;
+ 	font-family: 'poppins',sans-serif;
+ 	font-weight: bold;
+ 	height: 100%;
+ 	background: #00abf0;
+ 	border:2px solid #00abf0;
+ 	border-radius: 8px;
+ 	font-size: 19px;
+ 	padding: 10px;
+ 	
+ 	margin-left: 15px;
+ 	color: #081b29;
+ 	text-decoration: none;
+ 	font-weight: 600;
+ 	letter-spacing: 1px;
+ 	z-index: 1;
+ 	overflow: hidden;
+ 	transition: .5s;
+
+ }
+ .navbar li{
+ 	list-style: none;
+ 	float: top;
+ 	margin-left:1200px;
+ 	
+ 	margin-top: 5px;
+ }
+ .navbar a:hover{
+ 	color: #00abf0;
+
+ }
+ .navbar a:nth-child(2){
+ 	background: transparent;
+ 	color: #00abf0;
+
+ }
+ .navbar a:nth-child(2):hover{
+ 	color: #081b29;
+ }
+ .navbar a:nth-child(2)::before{
+ 	background: #00abf0;
+
+ }
+ .navbar a::before{
+ 	content:'';
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 0;
+ 	height: 100%;
+ 	background: #081b29;
+ 	z-index: -1;
+ 	transition: .5s;
+
+
+ }
+ .navbar a:hover::before{
+ 	width: 100%;
+
+ }
+ .img1{
+ 	border: 5px solid black;
+ 	border-radius: 70%;
+ 	width: 100px;
+ 	height: 100px;
+ 	justify-content: center;
+ 	align-content: center;
+ 	align-items: center;
+ 	margin-left: 700px;
+ }
+ .img2{
+ 	width: 100px;
+ 	height: 200px; 
+ 	margin-left: 1250px;
+ 	margin-top: -210px;
+ 	border: 3px solid blue;
+ 	border-radius: 50%;
+ }
+.img2:hover{
+	width:200px;
+	height: 400px;
+	margin-left: 650px;
+	opacity: 1;
+	transform: .7s;
+}
+  .btn-box a {
+  	text-align: center;
+  	margin-left: 10px;
+  	margin-top: 300px;
+ 	position: relative;
+ 	float: left;
+ 	justify-content: center;
+ 	align-items: center;
+ 	width: 300px;
+ 	height: 100%;
+ 	background: #00abf0;
+ 	border:2px solid #00abf0;
+ 	border-radius: 8px;
+ 	font-size: 50px;
+ 	color: #081b29;
+ 	text-decoration: none;
+ 	font-weight: 600;
+ 	letter-spacing: 1.5px;
+ 	z-index: 1;
+ 	overflow: hidden;
+ 	transition: .5s;
+ }
+ .btn-box a:hover{
+ 	color: #00abf0;
+
+ }
+ .btn-box a:nth-child(2){
+ 	background: transparent;
+ 	color: #00abf0;
+
+ }
+ .btn-box a:nth-child(2):hover{
+ 	color: #081b29;
+ }
+ .btn-box a:nth-child(2)::before{
+ 	background: #00abf0;
+
+ }
+ .btn-box a::before{
+ 	content:'';
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 0;
+ 	height: 100%;
+ 	background: #081b29;
+ 	z-index: -1;
+ 	transition: .5s;
+
+
+ }
+ .btn-box a:hover::before{
+ 	width: 100%;
+
+ }
+h2{
+	color: white;
+	font-size: 60px;
+	font-family: 'poppins',sans-serif;
+	margin-top: -80px;
+	margin-left: 30px;
+}
+b{
+	color: red;
+
+}
+.sl{
+	border: .5px solid rgb(0 100 255);
+	border-radius: 50%;
+	border: fit-content;
+	margin-top: -200px;
+	 
+}
+.msl{
+	margin-left: 850px;
+	margin-top: -70px;
+	}
+	.containaer{
+			display: inline-block;
+			color: white;
+			margin-left:200px;
+		}
+		.text{
+			font-size: 5em;
+			letter-spacing: 10px;
+			font-family: monospace;
+			font-weight: 800;
+			border-right: 5px solid;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			animation: typing 9s  infinite backwards, cursor .4s step-end infinite alternate;
+		}
+		@keyframes cursor {
+			50%{ border-color: transparent; }
+		}
+		@keyframes typing{
+			from {width: 0}
+		}
+
+.text{
+	margin-top: -1px;
+	color: white;
+}
+		.hlw{
+			font-size: 5em;
+			letter-spacing: 10px;
+			font-family: monospace;
+			font-weight: 800;
+			color:white;
+			margin-top: -90px;
+			border-right: 5px solid;
+			width:20%;
+			white-space: nowrap;
+			overflow: hidden;
+			animation: hlw 3s  infinite backwards, lw .4s step-end infinite alternate;
+		}
+		@keyframes lw {
+			50%{ border-color: transparent; }
+		}
+		@keyframes hlw{
+			from {width: 0}
+		}
+
+	</style>
+</head>
+<body>
+     <div class="containaer">
+     	
+	<p class="text">Work With <b> BAD Worker..</b></p>
+</div>
+     <img  class="img1" src="7.jpg">
+     <img class="img2" src="newimg.jpg">
+ 
+     	
+	<p class="hlw">Hello..</p>
+
+
+     <nav>
+     	<div class="btn-box">
+					<a href="file:///C:/Users/Mazhab%20Rashid/Desktop/Web%20design/pure%20Loader.html">Loading...</a>
+					<a href="file:///C:/Users/Mazhab%20Rashid/Desktop/Web%20design/text%20animationn.html">Home Page</a>
+				</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="file:///C:/Users/Mazhab%20Rashid/Desktop/Web%20design/web%20No%202%20test.html" target="blank">Another Web site</a></li>
+					
+					<li><a href="file:///C:/Users/Mazhab%20Rashid/Desktop/Web%20design/animated%20bg.html">Magic</a></li>
+					<li><a href="file:///C:/Users/Mazhab%20Rashid/Desktop/Web%20design/pure%20Loader.html">Loading anime</a></li>
+					<li><a href="file:///C:/Users/Mazhab%20Rashid/Desktop/Web%20design/css%20testt.html">Glowing Cube</a></li>
+					<li><a href="file:///C:/Users/Mazhab%20Rashid/Desktop/Web%20design/practice.html">Portfolio Web</a></li>
+					<li><a href="file:///C:/Users/Mazhab%20Rashid/Desktop/Web%20design/hober%20effect.html" >Click me</a></li>
+					<li><a href="file:///C:/Users/Mazhab%20Rashid/Desktop/my%20web%20site.html" class="another web" target="
+						blank">MY another Website</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="msl">
+		<img class="sl" src="fb.png">
+		<img class="sl" src="tw.png">
+		<img class="sl" src="ig.png">
+		<img class="sl" src="share.png">
+		<img class="sl"src="info.png">
+		</div>
+		
+</body>
+</html>
